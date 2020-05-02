@@ -1,0 +1,41 @@
+#wrapper {
+	display: flex;
+	flex-flow: column;
+}
+
+#simulation {
+	display: flex;
+	flex-flow: row;
+}
+#gui {
+	display: flex;
+	flex-flow: column;
+	min-width: 150px;
+	flex-basis: auto;
+}
+
+#classroom {
+	flex-grow: 1;
+}
+#students {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: space-around;
+}
+.student {
+	background: no-repeat center url("../images/boy.png");
+	background-size: contain;
+	flex-basis: 80px;
+	height: 80px;
+	display: flex;
+	.birthday {
+		align-self: flex-end;
+		background-color: rgb(255, 230, 161);
+		padding: 0.2rem;
+	}
+}
+.student.hit {
+	background-image: url("../images/fox.png");
+	background-color: rgb(255, 0, 0);
+}
+
